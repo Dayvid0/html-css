@@ -1,0 +1,171 @@
+
+.uber-button{
+  background-color: black;
+  color: white;
+  height: 36px;
+  width:105px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.amazon-button{
+  background-color: #f5be0b;
+  height: 36PX;
+  width: 105px;
+  margin-left: 8px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+}
+.github-button{
+  background-color:rgb(3, 143, 3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+  height: 36px;
+  width:105px ;
+  font-weight: bold;
+  font-size: 20px;
+}
+.bootstrap-button{
+  height: 36px;
+  width: 105px;
+  border: none;
+  border-radius: 2px;
+  cursor:pointer;
+  margin-left: 8px;
+  border-radius: 4px;
+  background-color:rgb(101, 74, 143);
+  color:white;
+  font-weight: bold;
+}
+.download-button{
+  height: 36px;
+  width: 105px;
+  cursor: pointer;
+  background-color: white;
+  color: grey;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.linkedin-button{
+  height: 36px;
+  width: 190px;
+  color: white;
+  background-color: rgb(25, 110, 167);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  margin-left: 8px;
+
+}
+.save-button{
+  height: 36px;
+  width: 105px;
+  background-color: white;
+  color: rgb(105, 105, 228);
+  font-weight: bold;
+  border-radius: 20px;
+  border:2px solid rgb(88, 88, 204);
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.pagination button {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.pagination a {
+  text-decoration:dotted;
+  color: blue;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  border-bottom: 1px solid blue;
+}
+.shadow {
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.shadow:active {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: darkgreen;
+}
+.stretch-button {
+    background-color: black;
+    color:white;
+    border: none;
+    padding-top: 10PX;
+    padding-bottom: 10px;
+  }
+.stretch-button:hover {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+  }
+  .mod {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .und {
+    text-decoration: underline;
+    font-family: "Montserrat Subrayada", sans-serif;
+    margin-top:5px;
+  }
+  .on {
+    text-align: center;
+      font-family: "Montserrat Subrayada", sans-serif;
+      font-weight:400 ;
+      font-style: normal;
+    margin-top: 5px;
+    }

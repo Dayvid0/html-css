@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merged Designs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    /* Styles for 12e */
+    .notification-card {
+      width: 250px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .notification-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    .notification-item:last-child {
+      margin-bottom: 0;
+    }
+    .badge {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+    /* Styles for 12g */
+    .follow-card {
+      width: 350px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .user-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .user-item:last-child {
+      margin-bottom: 0;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .user-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .user-text {
+      font-size: 14px;
+    }
+    .user-text span {
+      display: block;
+    }
+    .user-text .name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .follow-btn {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .follow-btn:hover {
+      background-color: #0056b3;
+    }
+    /* Styles for 12f */
+    .search-bar {
+      width: 600px;
+      background-color: #6c63ff;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar .home {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .search-bar input {
+      flex: 1;
+      margin: 0 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 15px;
+      outline: none;
+    }
+    .search-bar button {
+      background-color: #4a3fb8;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #372c91;
+    }
+  </style>
+</head>
+<body>
+  <!-- Section 12e -->
+  <section>
+    <h2>12e. Notification Design</h2>
+    <div class="notification-card">
+      <div class="notification-item">
+        <span>Home</span>
+        <span class="badge">14</span>
+      </div>
+      <div class="notification-item">
+        <span>Notifications</span>
+        <span class="badge">3</span>
+      </div>
+      <div class="notification-item">
+        <span>Messages</span>
+        <span class="badge">5</span>
+      </div>
+    </div>
+  </section>
+  <!-- Section 12g -->
+  <section>
+    <h2>12g. Follow Card Design</h2>
+    <div class="follow-card">
+      <div class="user-item">
+        <div class="user-info">
+          <img class="user-avatar" src="THUMBNAILS/doog.jpg" alt="Oliver">
+          <div class="user-text">
+            <span class="name">oliver</span>
+            <span>the cat</span>
+            <span>Popular</span>
+          </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="user-item">
+        <div class="user-info">
+          <img class="user-avatar" src="THUMBNAILS/dogy.jpeg" alt="Mimi">
+          <div class="user-text">
+            <span class="name">Mimi</span>
+            <span>Sleepy Cat</span>
+            <span>Popular</span>
+          </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="user-item">
+        <div class="user-info">
+          <img class="user-avatar" src="THUMBNAILS/dogg.jpg" alt="Rex">
+          <div class="user-text">
+            <span class="name">Rex</span>
+            <span>Happy Bulldog</span>
+            <span>Popular</span>
+          </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+    </div>
+  </section>
+  <!-- Section 12f -->
+  <section>
+    <h2>12f. Search Bar Design</h2>
+    <div class="search-bar">
+      <span class="home">Home</span>
+      <input type="text" placeholder="Search">
+      <button>Download</button>
+    </div>
+  </section>
+</body>
+</html>

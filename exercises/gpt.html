@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-container {
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .product-image {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .promotion {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button-style {
+            font-family: inherit;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart2 {
+            background-color: #28a745;
+            color: white;
+            margin-top: 10px;
+        }
+        .cart2:hover {
+            background-color: #218838;
+        }
+        .product-price {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .product-name {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Example of Product 1 -->
+        <div class="product-container">
+            <img src="/THUMBNAILS/img1.jpeg" alt="Yeezy 350 V2 sneakers" class="product-image">
+            <div class="promotion">50% OFF</div>
+            <button class="button-style cart2">Add to Cart</button>
+            <div class="product-price">$33.06</div>
+            <div class="product-name">Yeezy 350 V2</div>
+        </div>
+        <!-- Example of Product 2 -->
+        <div class="product-container">
+            <img src="/THUMBNAILS/shirt.webp" alt="Classic Cotton Shirt" class="product-image">
+            <div class="promotion">20% OFF</div>
+            <button class="button-style cart2">Add to Cart</button>
+            <div class="product-price">$20.00</div>
+            <div class="product-name">Classic Cotton Shirt</div>
+        </div>
+        <!-- Example of Product 3 -->
+        <div class="product-container">
+            <img src="/THUMBNAILS/img5.jpg" alt="Stylish Jacket" class="product-image">
+            <div class="promotion">30% OFF</div>
+            <button class="button-style cart2">Add to Cart</button>
+            <div class="product-price">$50.00</div>
+            <div class="product-name">Stylish Jacket</div>
+        </div>
+        <!-- Add more product items here dynamically -->
+    </div>
+</body>
+</html>

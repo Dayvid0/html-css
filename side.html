@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar with Tooltips</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .side-bar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 55px;
+      background-color: white;
+      width: 72px;
+      box-shadow: 10px 10px 20px 5px rgba(126, 122, 122, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .sidebar-link {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+    }
+    .link-text {
+      font-size: 12px;
+      color: #333;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    .tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip {
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 5px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s;
+    }
+    .tooltip-container:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="side-bar">
+    <div class="sidebar-link">
+      <div class="tooltip-container">
+        <img src="/icons/home.png" class="icon">
+        <div class="tooltip">Home</div>
+      </div>
+      <span class="link-text">Home</span>
+    </div>
+    <div class="sidebar-link">
+      <div class="tooltip-container">
+        <img src="/icons/explore.webp" class="icon">
+        <div class="tooltip">Explore</div>
+      </div>
+      <span class="link-text">Explore</span>
+    </div>
+    <div class="sidebar-link">
+      <div class="tooltip-container">
+        <img src="/icons/subscription.png" class="icon">
+        <div class="tooltip">Subscriptions</div>
+      </div>
+      <span class="link-text">Subscriptions</span>
+    </div>
+    <div class="sidebar-link">
+      <div class="tooltip-container">
+        <img src="/icons/originals.png" class="icon">
+        <div class="tooltip">Originals</div>
+      </div>
+      <span class="link-text">Originals</span>
+    </div>
+    <div class="sidebar-link">
+      <div class="tooltip-container">
+        <img src="/icons/youtube-music.png" class="icon">
+        <div class="tooltip">Music</div>
+      </div>
+      <span class="link-text">Music</span>
+    </div>
+    <div class="sidebar-link">
+      <div class="tooltip-container">
+        <img src="/icons/library.webp" class="icon">
+        <div class="tooltip">Library</div>
+      </div>
+      <span class="link-text">Library</span>
+    </div>
+  </div>
+</body>
+</html>

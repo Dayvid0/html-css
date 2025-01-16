@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .tweet-container {
+      display: flex;
+      align-items: flex-start;
+      width: 600px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+    }
+    /* Profile Picture */
+    .profile-picture {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-right: 15px;
+    }
+    /* Text Content */
+    .text-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .name-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .username {
+      color: #888;
+      font-size: 14px;
+    }
+    .tweet-text {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    /* Link Preview */
+    .link-preview {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    .link-thumbnail {
+      width: 60px;
+      height: 60px;
+      background-color: #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .link-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .link-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .link-url {
+      color: #888;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tweet-container">
+    <!-- Profile Picture -->
+    <div><img class="profile-picture" src="THUMBNAILS/dogg.jpg" alt=""></div>
+    <!-- Text Content -->
+    <div class="text-content">
+      <!-- Name and Username -->
+      <div class="name-row">
+        <span class="name">supersimple.dev</span>
+        <span class="username">@SuperSimpleDev</span>
+      </div>
+      <!-- Tweet Text -->
+      <div class="tweet-text">
+        What is backend web development? A complete overview. New video is up!
+      </div>
+      <!-- Link Preview -->
+      <div class="link-preview">
+        <div><img class="link-thumbnail" src="channel-pictures/channel-2.jpeg" alt=""></div>
+        <div class="link-details">
+          <div class="link-title">Backend web development - a complete overview (2021)</div>
+          <div class="link-url">youtube.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

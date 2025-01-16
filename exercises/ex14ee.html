@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+  <style>
+    body{
+      background-color:white;
+      height: 3000px;
+    }
+    .cat {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .add-button {
+      border: none;
+      background-color: skyblue;
+      font-weight: bold;
+      border-radius: 10px;
+      height: 40px;
+      column-gap: 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .message-button {
+      border: none;
+      border-radius: 10px;    
+      font-weight: bold;
+      height: 40px;
+      margin-right: 0px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .cat-text{
+      display: flex;
+      align-items: center;
+    }
+    .header {
+    position: fixed;  
+    top: 0;          
+    left: 0;        
+    right: 0;       
+    padding: 16px;   
+    z-index: 100;    
+    padding-bottom: 20px;
+    background-color: white;
+}
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .side-bar {
+      height: 100vh;
+      background-color: black;
+      color: white;
+      margin-top: 80px;
+      position:fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+    }
+    .cat-text {
+      height: 50px;
+    }
+    .side-bar img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      align-items: center;
+    }
+    .word {
+      font-size: 20px;
+      font-weight: bold;font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+  </style>
+</head>
+<body>  
+  <div class="header">
+    <div class="user">
+      <img src="/THUMBNAILS/dogg.jpg" class="cat">
+    <span class="cat-text">Oliver Cat</span> 
+  </div>
+    <div class="buttons">
+      <button class="add-button">Add Friend</button>
+      <button class="message-button">Message</button>
+    </div>
+  </div>
+  <div class="side-bar ">
+    <p class="word">INFO</p>
+    <div><img src="/channel-pictures/channel-6.jpeg" alt="err">  Mr. Beast!</div><br>
+    <div><img src="/channel-pictures/channel-3.jpeg" alt="err"> Watchu gon' do!</div><br>
+    <div><img src="/THUMBNAILS/dogg.jpg" alt="err">  Bad boys!</div>
+  </div>
+</body>
+</html>

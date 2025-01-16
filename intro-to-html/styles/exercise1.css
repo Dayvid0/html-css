@@ -1,0 +1,61 @@
+
+.add-button{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(255,216, 20);
+  color: black;
+  cursor: pointer;
+}
+.add-button:active{
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.buy-button {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: orange;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+}
+.buy-button:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  cursor:grab
+
+}
+.click-button {
+  background-color: white;
+  color:blue;
+  cursor: grab;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border:2px solid rgb(88, 88, 204);
+  border-radius: 2px; 
+
+}
+.day-button {
+  color:red;
+  background-color: white;
+  font-weight: bold;
+  border:2px solid rgb(255, 164, 28);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ice-button {
+  color:white;
+  background-color:orange;
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  cursor: pointer;
+}

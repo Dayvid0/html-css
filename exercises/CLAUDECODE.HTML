@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Displays</title>
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .product-container {
+            position: relative;
+            width: 100%;
+            background-color: #f4f4f4;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .product-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        .promotion {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            background-color: rgb(219, 7, 7);
+            color: white;
+            font-family: Arial;
+            padding: 8px 12px;
+            z-index: 2;
+            font-weight: bold;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 16%;
+            background-color: rgba(229, 229, 229, 0.8);
+            z-index: 1;
+        }
+        .cart2 {
+            background-color: green;
+            position: absolute;
+            bottom: 8px;
+            right: 70%;
+            transform: translateX(-50%);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            z-index: 2;
+            color: white;
+        }
+        .cart2:hover {
+          background-color:lightgreen;
+            position: absolute;
+            bottom: 8px;
+            right: 70%;
+            transform: translateX(-50%);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            z-index: 2;
+            color: blue;
+        }
+        .product-price {
+            background-color: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            z-index: 2;
+        }
+        .product-name {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            padding: 8px 12px;
+            font-size: 15px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Example of one product card - repeat this structure for each product -->
+        <div class="product-container">
+            <img src="/THUMBNAILS/img1.jpeg" alt="Product Image" class="product-image">
+            <div class="promotion">20% OFF</div>
+            <div class="overlay"></div>
+            <button class="cart2">Add to Cart</button>
+            <button class="product-price">$33.06</button>
+            <div class="product-name">FADED DENIM JEANS</div>
+        </div>
+        <!-- Repeat the above product-container structure for each product -->
+        <div class="product-container">
+          <img src="/THUMBNAILS/img2.jpg" alt="Product Image" class="product-image">
+          <div class="promotion">20% OFF</div>
+          <div class="overlay"></div>
+          <button class="cart2">Add to Cart</button>
+          <button class="product-price">$33.06</button>
+          <div class="product-name">BLUE DENIM</div>
+      </div>
+      <div class="product-container">
+        <img src="/THUMBNAILS/img3.webp" alt="Product Image" class="product-image">
+        <div class="promotion">20% OFF</div>
+        <div class="overlay"></div>
+        <button class="cart2">Add to Cart</button>
+        <button class="product-price">$33.06</button>
+        <div class="product-name">BLACKDENIM</div>
+    </div>
+    <div class="product-container">
+      <img src="/THUMBNAILS/YEEZY700.jpg" alt="Product Image" class="product-image">
+      <div class="promotion">20% OFF</div>
+      <div class="overlay"></div>
+      <button class="cart2">Add to Cart</button>
+      <button class="product-price">$33.06</button>
+      <div class="product-name">YEEZY 750</div>
+  </div>
+  <div class="product-container">
+    <img src="/THUMBNAILS/img5.jpg" alt="Product Image" class="product-image">
+    <div class="promotion">20% OFF</div>
+    <div class="overlay"></div>
+    <button class="cart2">Add to Cart</button>
+    <button class="product-price">$33.06</button>
+    <div class="product-name">YEEZY 350 V2</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/img6.jpg" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">YEEZY SLIDES</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/img7.webp" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">YEEZY 450 V2</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/shirt.webp" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">BALENCIAGA TEE</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/shirt2.jpg" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">PLAIN WHITE TEE</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/shirt4.jpg" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">SWEATER-SHIRT</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/shirt3.jpg" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">GREEN TEE</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/shirt5.avif" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">YEEZY HOODIES</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/shirt6.avif" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">PLAIN BLACK HOODIE</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/CAP1.webp" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">NY CAP</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/CAP2.jpg" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">CHICAGO BULLS CAP</div>
+</div>
+<div class="product-container">
+  <img src="/THUMBNAILS/CAP3.avif" alt="Product Image" class="product-image">
+  <div class="promotion">20% OFF</div>
+  <div class="overlay"></div>
+  <button class="cart2">Add to Cart</button>
+  <button class="product-price">$33.06</button>
+  <div class="product-name">NY CAP</div>
+</div>
+    </div>
+</body>
+</html>

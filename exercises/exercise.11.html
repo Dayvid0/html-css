@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GRID EXERCISE</title>
+    <style>
+      .grid-container{
+        display: grid;
+        grid-template-columns: 200px 75px;  
+      }
+      .grid-item-1{
+        background-color: lightblue;
+      }
+      .grid-item-2 {
+        background-color: lightpink;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-top: 30px;
+      }
+      .cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-top: 30px;
+      }
+      .contain {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+      }
+      .oliver {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        cursor: pointer;
+      } 
+      .profile-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+      }
+      .profile-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+      }
+      .profile-name {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000;
+      }
+      .mutual-friends {
+    display: flex;
+    gap: 8px;
+    color: #606770;
+    margin-bottom: 12px;
+      }    
+      .friend-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+      } 
+      .add-friend-btn {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+      }
+      .add-friend-btn:hover {
+    background-color: #145dbf;
+      }
+      .profile-content {
+        margin-bottom: 20px;
+        padding-left:20px;
+        border-color: black;
+      }
+      .contain {
+        row-gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item-1">200px</div>
+      <div class="grid-item-2">75px</div>
+    </div>
+    <div>
+      <div class="container">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+      </div>
+    </div>
+    <div class="cont">
+      <div style="background-color: lightblue;">col1</div>
+      <div style="background-color: lightblue;">col2</div>
+      <div style="background-color: lightblue;">col3</div>
+      <div style="background-color: lightblue;">col4</div>
+      <div style="background-color: lightblue;">col1</div>
+      <div style="background-color: lightblue;">col2</div>
+      <div style="background-color: lightblue;">col3</div>
+      <div style="background-color: lightblue;">col4</div>
+    </div>
+    <div class="contain">
+      <div class="profile-card">
+        <img src="THUMBNAILS/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-front-of-white.jpg" alt="Profile Image" class="profile-img">
+        <div class="profile-content">
+            <h2 class="profile-name">Oliver</h2>
+            <p class="mutual-friends">
+                <img src="THUMBNAILS/puppy-1679276175142.webp" alt="Friend Icon" class="friend-icon">
+                2 mutual friends
+            </p>
+            <button class="add-friend-btn">Add Friend</button>
+        </div>
+    </div>
+    <div class="profile-card">
+      <img src="THUMBNAILS/puppy-1679276175142.webp" alt="Profile Image" class="profile-img">
+      <div class="profile-content">
+          <h2 class="profile-name">Oliver</h2>
+          <p class="mutual-friends">
+              <img src="THUMBNAILS/premium_photo-1673967831980-1d377baaded2.jpeg" alt="Friend Icon" class="friend-icon">
+              2 mutual friends
+          </p>
+          <button class="add-friend-btn">Add Friend</button>
+      </div>
+  </div>
+  <div class="profile-card">
+    <img src="THUMBNAILS/premium_photo-1673967831980-1d377baaded2.jpeg" alt="Profile Image" class="profile-img">
+    <div class="profile-content">
+        <h2 class="profile-name">Oliver</h2>
+        <p class="mutual-friends">
+            <img src="THUMBNAILS/puppy-1679276175142.webp" alt="Friend Icon" class="friend-icon">
+            2 mutual friends
+        </p>
+        <button class="add-friend-btn">Add Friend</button>
+    </div>
+</div>
+<div class="profile-card">
+  <img src="THUMBNAILS/doog.jpg" alt="Profile Image" class="profile-img">
+  <div class="profile-content">
+      <h2 class="profile-name">Oliver</h2>
+      <p class="mutual-friends">
+          <img src="THUMBNAILS/puppy-1679276175142.webp" alt="Friend Icon" class="friend-icon">
+          2 mutual friends
+      </p>
+      <button class="add-friend-btn">Add Friend</button>
+  </div>
+</div>
+<div class="profile-card">
+<img src="THUMBNAILS/dogg.jpg" alt="Profile Image" class="profile-img">
+<div class="profile-content">
+    <h2 class="profile-name">Oliver</h2>
+    <p class="mutual-friends">
+        <img src="THUMBNAILS/premium_photo-1673967831980-1d377baaded2.jpeg" alt="Friend Icon" class="friend-icon">
+        2 mutual friends
+    </p>
+    <button class="add-friend-btn">Add Friend</button>
+</div>
+</div>
+<div class="profile-card">
+<img src="THUMBNAILS/dogy.jpeg" alt="Profile Image" class="profile-img">
+<div class="profile-content">
+  <h2 class="profile-name">Oliver</h2>
+  <p class="mutual-friends">
+      <img src="THUMBNAILS/dogg.jpg" alt="Friend Icon" class="friend-icon">
+      2 mutual friends
+  </p>
+  <button class="add-friend-btn">Add Friend</button>
+</div>
+</div>
+<div style="display: flex;
+">
+  <div style="background-color: lightblue;width: 200px;">200px</div>
+  <div style="background-color: lightpink;width: 75px;">75px</div>
+</div>
+    </div> <br> 
+    <div style="display: flex;">
+      <div style="background-color: lightblue;width: 50px;">item1</div>
+      <div style="background-color: lightpink;flex: 1;">item2</div>
+      <div style="background-color: lightblue;width: 75px;">item3</div>
+    </div>
+  <br>
+    <div style="display: flex; flex-direction: row;justify-content: space-between;">
+      <div style="background-color: lightpink;">item1</div>
+      <div style="background-color: lightpink;">item2</div>
+      <div style="background-color: lightpink;">item3</div>
+      <div style="background-color: lightpink;">item4</div>
+    </div><br>
+  </body>
+</html>

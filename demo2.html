@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends List</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color:white;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            min-height: 100vh;
+        }
+
+        /* Container */
+        .friends-container {
+          display: inline-block;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Friend Cards Wrapper */
+        .cards-wrapper {
+          display: flex;
+          gap: 20px;
+        }
+
+        /* Individual Card */
+        .card {
+            display: inline-block;
+            width: 200px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit:cover;
+        }
+
+        .card-content {
+            padding: 10px;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 8px 0;
+            justify-content: left;
+        }
+
+        .mutual-friends {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mutual-friends img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .btn {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #145dbf;
+        }
+    </style>
+</head>
+<body>
+    <!-- Friends Container -->
+    <div class="friends-container">
+        <div class="cards-wrapper">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="THUMBNAILS/IMG-20241013-WA0011.jpg" alt="Cat">
+                <div class="card-content">
+                    <div class="name">Oliver</div>
+                    <div class="mutual-friends">
+                        <img src="THUMBNAILS/Pasted image (10).png" alt="Profile">
+                        <span>2 mutual friends</span>
+                    </div>
+                    <button class="btn">Add Friend</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="THUMBNAILS/Pasted image.png" alt="Cat">
+                <div class="card-content">
+                    <div class="name">OKULLO</div>
+                    <div class="mutual-friends">
+                        <img src="THUMBNAILS/Pasted image (7).png" alt="Profile">
+                        <span>3 mutual friends</span>
+                    </div>
+                    <button class="btn">Add Friend</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="THUMBNAILS/Pasted image (7).png" alt="Dog">
+                <div class="card-content">
+                    <div class="name">Rex</div>
+                    <div class="mutual-friends">
+                        <img src="THUMBNAILS/Pasted image.png" alt="Profile">
+                        <span>4 mutual friends</span>
+                    </div>
+                    <button class="btn">Add Friend</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

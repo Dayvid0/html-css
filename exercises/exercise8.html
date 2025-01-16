@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .card-container {
+        display: flex;
+        gap: 15px;
+        justify-content: left;
+      }
+      .card {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        cursor: pointer;
+      }
+      .card img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+      }
+      .card img:hover {
+        border: 2px solid #000;
+        cursor: zoom-in;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: rotate(5deg);
+        opacity: 0.7;
+      }
+      .card-content {
+        padding: 10px;
+      }
+      .card-content h3 {
+        margin: 5px 0;
+        font-size: 18px;
+      }
+      .card-content p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #555;
+      }
+      .card-content button {
+        padding: 8px 12px;
+        background-color: #1da1f2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .card-content button:hover {
+        background-color: #1a91da;
+      }
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #fff;
+    }
+    .google-logo {
+      width: 272px;
+      height: 92px;
+      margin-bottom: 20px;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      width: 584px;
+      height: 100px;
+      padding: 5px 8px 0 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .search-input {
+      flex: 1;
+      border:none;
+      outline: none;
+      font-size: 16px;
+      color: #202124;
+      font-style: italic;
+      height: 30px;
+    }
+    .search-buttons {
+      display: flex;
+      justify-content: center;
+    }
+    .search-button {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #3c4043;
+      font-size: 14px;
+      padding: 8px 16px;
+      margin: 0 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .search-button:hover {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      background-color: #f0f0f0;
+      border-color: none;
+      color: #202124;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 75px; /* Two columns with fixed widths */
+            width: 275px; /* Total width for reference */
+        }
+        /* Grid Items */
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .item1 {
+            background-color: #a2d9ff; /* Light blue */
+            margin-top: 10px;
+            height: 50px;
+        }
+        .item2 {
+            background-color: #f7b2b7; /* Light pink */
+            margin-top: 10px;   
+        }
+        .grid-3-cols {
+          display: grid;
+          grid-template-columns: repeat(3, 50px);
+          grid-column-gap:20px;
+        }
+        .col1, .col2, .col3 {
+          height: 50px;
+          background-color:blue;
+          margin-top: 30px;
+          width: 60px;
+          margin-bottom: 50px;
+}
+.grid-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 10px; /* Column gap, row gap */
+}
+.col {
+    background-color: pink; /* Optional: Add background color */
+    width: 230px;
+}
+    </style>
+    <title>exercise*8</title>
+    </head>
+  <body>
+    <img class="google-logo" src="THUMBNAILS/download.png" alt="Google Logo">
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search Google or type a URL">
+  </div>
+  <div class="search-buttons">
+    <button class="search-button">Google Search</button>
+    <button class="search-button">I'm Feeling Lucky</button>
+  </div>
+  <br>
+    <div class="card-container">
+      <div class="card">
+        <img src="THUMBNAILS/Pasted image.png" alt="Cat 1">
+        <div class="card-content">
+          <h3>David</h3>
+          <p>100 mutual friends</p>
+          <button>Add Friend</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="THUMBNAILS/IMG-20241013-WA0011.jpg" alt="Cat 2">
+        <div class="card-content">
+          <h3>Ongom</h3>
+          <p>50 mutual friends</p>
+          <button>Add Friend</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="THUMBNAILS/IMG-20240816-WA0076.jpg" alt="Cat 3">
+        <div class="card-content">
+          <h3>Okullo</h3>
+          <p>500 mutual friends</p>
+          <button>Add Friend</button>
+        </div>
+      </div>
+    </div><br>
+    <div class="card-container">
+      <div class="card">
+        <img src="THUMBNAILS/Pasted image (7).png" alt="Cat 1">
+        <div class="card-content">
+          <h3>Daudi</h3>
+          <p>45 mutual friends</p>
+          <button>Add Friend</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="THUMBNAILS/Pasted image (5).png" alt="Cat 2">
+        <div class="card-content">
+          <h3>Dwayne</h3>
+          <p>300 mutual friends</p>
+          <button>Add Friend</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="THUMBNAILS/Pasted image (10).png" alt="Cat 3">
+        <div class="card-content">
+          <h3>Walusimbi</h3>
+          <p>1M mutual friends</p>
+          <button>Add Friend</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item item1">200px</div>
+      <div class="grid-item item2">75px</div>
+  </div>
+  <div class="grid-3-cols">
+    <div class="col1"></div>
+    <div class="col2"></div>
+    <div class="col3"></div>
+  </div>
+  <div class="grid-contain">
+    <div class="col">col1</div>
+    <div class="col">col2</div>
+    <div class="col">col3</div>
+    <div class="col">col4</div>
+    <div class="col">col1</div>
+    <div class="col">col2</div>
+    <div class="col">col3</div>
+    <div class="col">col4</div>
+</div>
+  </body>
+</html>

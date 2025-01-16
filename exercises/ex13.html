@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .inbox-container {
+      width: 400px;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .email-row {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .email-row:last-child {
+      border-bottom: none;
+    }
+    .profile-picture {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-right: 10px;
+    }
+    .email-content {
+      flex-grow: 1;
+    }
+    .email-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 0;
+    }
+    .email-subtitle {
+      font-size: 12px;
+      color: #666;
+      margin: 0;
+    }
+    .email-time {
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="inbox-container">
+    <!-- Email Row 1 -->
+    <div class="email-row">
+      <div><img class="profile-picture" src="THUMBNAILS/dogy.jpeg" alt=""></div>
+      <div class="email-content">
+        <p class="email-title">Chewy Promotions</p>
+        <p class="email-subtitle">Biggest sales of the year! Hey there...</p>
+      </div>
+      <p class="email-time">4:58 PM</p>
+    </div>
+    <!-- Email Row 2 -->
+    <div class="email-row">
+      <div><img class="profile-picture" src="THUMBNAILS/download.png" alt=""></div>
+      <div class="email-content">
+        <p class="email-title">Best Buy</p>
+        <p class="email-subtitle">Your Best Buy eReceipt...</p>
+      </div>
+      <p class="email-time">12:32 PM</p>
+    </div>
+    <!-- Email Row 3 -->
+    <div class="email-row">
+      <div class=""><img class="profile-picture" src="THUMBNAILS/IMG-20241013-WA0011.jpg" alt=""></div>
+      <div class="email-content">
+        <p class="email-title">Netflix</p>
+        <p class="email-subtitle">Here’s what’s coming soon...</p>
+      </div>
+      <p class="email-time">9:00 AM</p>
+    </div>
+  </div>
+</body>
+</html>

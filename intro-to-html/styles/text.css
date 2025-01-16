@@ -1,0 +1,186 @@
+.video-title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  width: 300px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.video-stats {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+.video-author {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  color: gray;
+
+}
+.video-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(96,96,96);
+  width: 300px;
+  margin-top: 0;
+  margin-bottom:0;
+
+}
+.apple-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 50px;
+  background-color: rgb(227, 65, 64);
+  color: white;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 5px;
+  text-align: center;
+}
+.example:hover{
+  text-decoration: underline;
+}
+.example {
+  cursor: pointer;
+  margin-left: 12px;
+}
+.tahoma {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.ht {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0;
+}
+.be {
+  color: gray;
+  margin-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.in {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.get {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 20px 42px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.b {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.sales {
+  color: red;
+  text-decoration: italic;
+  font-size: 20px;
+  margin-top: 0;
+  margin-top: 10px;
+  font-style: italic;
+}
+.shop {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-right: 30px;
+}
+.see {
+  text-align: center;
+
+}
+.more {
+  color: blue;
+  text-align: center;
+  cursor: pointer;
+}
+.new {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  font-weight: bold;
+  margin: 0;
+}
+.mac {
+  font-weight: bold;
+  font-size:20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+}
+  .super {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .from {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .buy {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    margin: 0;
+    cursor: pointer;
+  }
+  .usd {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sd {
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .today {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .after {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .chp {
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .fcd {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .chp {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 140, 173);
+  }
+  .fcc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .web {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .here {
+    font-family: Arial, Helvetica, sans-serif;
+  }
